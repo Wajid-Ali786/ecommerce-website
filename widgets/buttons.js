@@ -1,1 +1,0 @@
-// Buttons functionality script

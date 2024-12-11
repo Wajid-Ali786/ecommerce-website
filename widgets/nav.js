@@ -1,1 +1,0 @@
-// Nav functionality script

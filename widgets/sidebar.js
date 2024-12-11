@@ -1,1 +1,0 @@
-// Sidebar functionality script

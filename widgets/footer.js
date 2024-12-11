@@ -1,1 +1,0 @@
-// Footer functionality script
