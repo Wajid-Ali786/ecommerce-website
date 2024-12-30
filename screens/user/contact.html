@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutlery Cove - Contact Us</title>
+    <link rel="stylesheet" href="./../../css/user.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Header Section */
+        .contact-header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            font-size: 36px;
+        }
+
+        .contact-header p {
+            font-size: 18px;
+        }
+
+        /* Contact Container */
+        .contact-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        /* Contact Info Section */
+        .contact-info {
+            flex: 1;
+            min-width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            color: #ff7f50;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            flex: 2;
+            min-width: 450px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #ff7f50;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact-form button:hover {
+            background-color: #e66f3e;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials h3 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .testimonials p {
+            font-size: 16px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        .testimonials p::before {
+            content: "“";
+            font-size: 24px;
+            color: #ff7f50;
+        }
+
+        .testimonials p::after {
+            content: "”";
+            font-size: 24px;
+            color: #ff7f50;
+        }
+
+        /* Map Section */
+        .contact-map {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <!-- Contact Header -->
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We're here to help! Reach out to us for any questions, feedback, or support.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:aliwaj300@gmail.com">aliwaj300@gmail.com</a></p>
+            <p>Phone: +92 (343) 5060-128</p>
+            <p>Address: Punjab, Wazirabad</p>
+            <p>Working Hours: Monday to Saturday, 9:00 AM - 6:00 PM</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="contact-container testimonials">
+        <h3>What Our Customers Say</h3>
+        <p>"Excellent products and great customer service! Highly recommend Cutlery Cove!"</p>
+        <p>"The quality of the cutlery items is amazing, and delivery was fast."</p>
+        <p>"Great experience shopping here. The staff is very helpful and responsive."</p>
+    </div>
+
+    <!-- Map -->
+    <div class="contact-container contact-map">
+        <h3>Our Location</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6339940942023!2d74.01352741523572!3d31.54888798137059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391900d6f4bb1915%3A0xf74e6a65cfdfde7!2sWazirabad%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v17032024" 
+            allowfullscreen="" 
+            loading="lazy"
+        ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./../../js/user/contact.js"></script>
+    <script src="./../../js/widgets/nav.js"></script>
+    <script src="./../../js/widgets/footer.js"></script>
+</body>
+</html>

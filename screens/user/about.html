@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cutlery Cove Market</title>
+    <link rel="stylesheet" href="./../../css/user.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .about-header {
+            background-color: #ff7f50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .about-header h1 {
+            font-size: 36px;
+        }
+
+        .about-header p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .about-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .team-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #ff7f50;
+        }
+
+        .team-member h4 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .history-section {
+            margin-top: 50px;
+        }
+
+        .history-section h2 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .timeline {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-year {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7f50;
+            margin: 10px 20px;
+        }
+
+        .values-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #fefefe;
+            text-align: center;
+        }
+
+        .values-section h2 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        .values-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .value-item {
+            flex: 1;
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .value-item h3 {
+            color: #ff7f50;
+            margin-bottom: 10px;
+        }
+
+        .value-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .faq-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h2 {
+            color: #ff7f50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-item {
+            margin: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .faq-answer {
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <!-- About Header -->
+    <div class="about-header">
+        <h1>About Cutlery Cove Market</h1>
+        <p>Your one-stop destination for premium cutlery and kitchen essentials.</p>
+    </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+        <h2>Who We Are</h2>
+        <p>Cutlery Cove Market is a trusted name in kitchenware, offering a wide selection of products tailored for every chef and home cook. With years of expertise in the industry, we understand the importance of reliable and beautifully designed tools for your culinary journey.</p>
+        
+        <h2>Our Vision</h2>
+        <p>We aim to revolutionize how you equip your kitchen by combining innovation with style. Our products are thoughtfully designed to elevate your cooking and dining experience.</p>
+
+        <img src="./../../assets/images/about-us.jpg" alt="Cutlery Cove Market">
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <h3>Quality</h3>
+                <p>We ensure all our products meet the highest standards of craftsmanship.</p>
+            </div>
+            <div class="value-item">
+                <h3>Affordability</h3>
+                <p>Our prices are tailored to suit every budget, making quality accessible.</p>
+            </div>
+            <div class="value-item">
+                <h3>Customer Satisfaction</h3>
+                <p>We prioritize your needs and strive for exceptional service.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our History -->
+    <div class="history-section">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <div class="timeline-content">
+                    <p>Founded in Wazirabad, Cutlery Cove Market started as a small shop specializing in handcrafted cutlery.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2018</div>
+                <div class="timeline-content">
+                    <p>Expanded to offer a full range of kitchenware and partnered with international suppliers to enhance product quality.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">
+                    <p>Launched our e-commerce platform, making it easier for customers to access our premium products worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meet the Team -->
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="./../../assets/images/team1.jpg" alt="John Doe">
+                <h4>Ali Wajahat</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="./../../assets/images/team2.jpg" alt="Jane Doe">
+                <h4>Hassan Raza</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="./../../assets/images/team3.jpg" alt="Sarah Ali">
+                <h4>Sarah Ali</h4>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <p class="faq-question">What makes your products unique?</p>
+            <p class="faq-answer">Our products are handcrafted with care, ensuring durability and elegance, and are sourced from trusted manufacturers.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">Do you offer international shipping?</p>
+            <p class="faq-answer">Yes, we ship worldwide. Delivery times vary based on the destination.</p>
+        </div>
+        <div class="faq-item">
+            <p class="faq-question">How can I contact customer support?</p>
+            <p class="faq-answer">You can email us at aliwaj300@gmail.com or call us at +92 (343) 5060-128.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./../../js/widgets/nav.js"></script>
+    <script src="./../../js/widgets/footer.js"></script>
+</body>
+</html>

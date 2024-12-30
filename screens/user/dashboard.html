@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="./../../css/seller.css">
+    <link rel="stylesheet" href="./../../css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+    <!-- Seller Dashboard -->
+    <div class="seller-dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Seller Dashboard</h2>
+            <ul>
+                <li><a href="#add-product" onclick="showSection('add-product')"><i class="fas fa-plus"></i> Add Product</a></li>
+                <li><a href="#view-orders" onclick="showSection('view-orders')"><i class="fas fa-box"></i> View Orders</a></li>
+                <li><a href="#manage-profile" onclick="showSection('manage-profile')"><i class="fas fa-user"></i> Manage Profile</a></li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Add Product Section -->
+          <!-- Add Product Section -->
+<section id="add-product" class="content-section active">
+    <h2>Add Product</h2>
+    <form id="product-form">
+        <label>Product Name:</label>
+        <input type="text" id="product-name" placeholder="Enter product name" required>
+
+        <label>Category:</label>
+        <input type="text" id="product-category" placeholder="Enter category" required>
+
+        <label>Price ($):</label>
+        <input type="number" id="product-price" placeholder="Enter price" required>
+        
+        <label>Image:</label>
+        <input type="file" id="product-image" required>
+
+        <button type="submit" class="btn-primary">Add Product</button>
+    </form>
+    <div id="product-feedback"></div>
+
+    <h3>Product List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Produt ID</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            <!-- Products will load dynamically -->
+        </tbody>
+    </table>
+</section>
+
+
+            <!-- View Orders Section -->
+            <section id="view-orders" class="content-section">
+                <h2>View Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Product</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-list">
+                        <!-- Orders dynamically loaded -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Manage Profile Section -->
+            <section id="manage-profile" class="content-section">
+                <h2>Manage Profile</h2>
+                <form id="profile-form">
+                    <label>Full Name:</label>
+                    <input type="text" id="seller-name" placeholder="Enter full name">
+
+                    <label>Email:</label>
+                    <input type="email" id="seller-email" placeholder="Enter email">
+
+                    <button type="submit" class="btn-secondary">Update Profile</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="./../../js/widgets/nav.js"></script>
+    <script src="./../../js/widgets/footer.js"></script>
+    <script src="./../../js/seller/seller.js"></script>
+</body>
+</html>

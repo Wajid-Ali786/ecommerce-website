@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutlery Cove - Products</title>
+   
+    <link rel="stylesheet" href="./../../css/user.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div id="navbar"></div>
+    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Explore Our Premium Cutlery</h1>
+    <p>Discover the finest cutlery sets for your kitchen and dining.</p>
+</section>
+     <!-- Products Section -->
+     <section class="product-section">
+        <h1>Our Products</h1>
+
+        <!-- Search and Filters -->
+        <div class="search-filters">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="kitchen-knives">Kitchen Knives</option>
+                <option value="tableware">Tableware</option>
+                <option value="cutlery-sets">Cutlery Sets</option>
+                <option value="accessories">Accessories</option>
+            <!-- filter by categories-->
+            <option value="Axes">Axes</option>
+            <option value="Cuting Boards">Cuting Boards</option>
+            <option value="Cheese and Meat Knives">Cheese and Meat Knives</option>
+            <option value="Copper or Silver-plated Cutlery">Copper or Silver-plated Cutlery</option>
+            <option value="Skewers and BBQ Tools">Skewers and BBQ Tools</option>
+            <option value="Leather Shealths and Holsters">Leather Shealths and Holsters</option>
+            <option value="Sharping Stons and Tools">Sharping Stons and Tools</option>
+            <option value="Customizable Cutlery">Customizable Cutlery</option>
+            <option value="Customizable Decorative Viking-themed Items">Customizable Decorative Viking-themed Items</option>
+            <option value="Customizable Viking-themed Tableware">Customizable Viking-themed Tableware</option>
+
+            </select>
+            <select id="price-filter">
+                <option value="all">All Prices</option>
+                <option value="under-25">Under $25</option>
+                <option value="25-50">$25 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="100-plus">Over $100</option>
+            </select>
+        </div>
+        <h1>Available Products</h1>
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-item" data-product-id="1">
+                <img src="./../../assets/images/knife.jpg" alt="Chef Knife">
+                <h3>Chef Knife</h3>
+                <p>$29.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="2">
+                <img src="./../../assets/images/fork.jpg" alt="Silver Fork">
+                <h3>Silver Fork</h3>
+                <p>$19.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="3">
+                <img src="./../../assets/images/spoon.jpg" alt="Designer Spoon">
+                <h3>Designer Spoon</h3>
+                <p>$24.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="4">
+                <img src="./../../assets/images/cutlery-set.jpg" alt="Cutlery Set">
+                <h3>Cutlery Set</h3>
+                <p>$49.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+             <!-- Product Listing -->
+    <main>
+     
+        <div id="product-list" class="product-grid">
+            <!-- Products will load here dynamically -->
+        </div>
+    </main>
+        <!-- Cart Section -->
+    <div class="cart-section">
+       
+        <ul id="cart-items"></ul>
+       
+       
+    </div>
+       
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./../../js/user/products.js"></script>
+    <script src="./../../js/widgets/nav.js"></script>
+    <script src="./../../js/widgets/footer.js"></script>
+  
+
+</body>
+</html>
